@@ -1,0 +1,148 @@
+<!DOCTYPE html/>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />    <title> Parcial2Index </title>
+        <link rel="stylesheet" href="parcial2formulario.css" />   
+    </head>
+
+    <body>
+
+        <header id="cabecera">
+            <img src="headerinside.jpg" width= 100% ; height= auto />
+        </header>
+    
+        <nav>
+            <ul>
+
+                <li><a href="">    Testimonios	</a></li>
+                <li><a href="">    Soporte      </a></li>			
+                <li><a href="">    Soluciones   </a></li>		
+                <li><a href="">    Nosotros     </a></li>
+                <li><a href="">    Bodegas      </a></li>
+                <li><a href="">    Productos    </a></li>
+                <li><a href="">    Eventos      </a></li>
+                <li><a href="">    Chat         </a></li>
+                <li><a href="">    Blogs        </a></li>
+                <li><a href="">    Noticias     </a></li>
+                <li><a href="">    Servicios    </a></li>
+                
+            </ul>
+        </nav> 
+    
+        <main>	
+    
+            <section>
+    
+                <aside id="izquierda">
+                    <div class="medio">
+    
+                        <article class="centro">  
+                            <img src="event_icon.gif" width= auto ; height= 9% /> 
+                            <font size="5">Eventos</font>   
+                        </article>
+    
+                        <article class="mayo"> 
+                            <p> MAYO 2011  </p>  
+                        </article> 
+    
+                        <article class="centro"> 
+                            <p class="even">  Se celebra en la provincia de Mendoza, el primer fin de semana de marzo ( casi sin interrupciones desde 1936 ) y se trata del homenaje que el hombre le dedica a su industria principal: la vitivinicola.  </p>  
+                        </article> 
+    
+                    </div>
+    
+                    <div class="medio">
+    
+                        <article class="centro">  
+                            <img src="service.gif"/> 
+                            <font size="5">Glosario</font>   
+                        </article>
+    
+                        <article class="centro"> 
+                            <p class="glos"> Enologo: <BR> experto responsable de dirigir y asesorar en el proceso de producion del vino y su almacenaje, analisis, conservacio, embotellados y comercializacion. Estudia asi mismo el proceso del cultivo de la vid, asi como los suelos aptos de terminados cepaje y optros temas vinculados.   </p>  
+                        </article> 
+    
+                    </div>
+    
+                </aside>
+    
+                <aside id="derecha">
+
+                    <h2>Contactenos</h2>
+                    </br>
+                    <h5>Alvear 2701</p>
+                    </br>
+                    <h5>Telefono: 4256598</p>
+                    <h5>Fax: 4205632</p>
+                    </br>
+                    <h5>Horario de atencion: de 8:30 a 17 hs</p>
+                    <h5>e-mail: contacto@vinos.com.ar</p>
+                    </br>
+                    <h4>*Campos Obligatorios</h3>
+                    </br>
+                    <form name="formulario"
+                    action="mailto:contacto@vinos.com.ar"
+                    onsubmit="return comprobar()">
+                        <label for="dest">Destinatario: </label>
+                        <SELECT NAME="genero">
+                        <OPTION>Sr.
+                        <OPTION>Sra.
+                        <OPTION>Otro
+                        </SELECT>
+                        <div class="campo">
+                            <label for="name">Apellido y </br>Nombre: </label>
+                            <input type="text" name="apynom" onfocus="restaurar()" required />
+                            <label>*</label>
+                        </div>
+                        <div class="campo">
+                            <label for="raso">Razon Social: </label>
+                            <input type="text" name="razsoc" onfocus="restaurar()" required pattern="[A-Z]+" />
+                        </div>
+                        <div class="campo">
+                            <label for="mail">E-mail:</label> 
+                            <input type="email" name="mail" onfocus="restaurar()" required />
+                            <label>*</label>
+                        </div>
+                        <div class="campo">
+                            <label for="tel">Telefono: </label>
+                            <input type="text" name="tel" onfocus="restaurar()" required />
+                            <label>*</label>
+                        </div>
+                        <div class="campo">
+                            <label for="cel">Celular: </label>
+                            <input type="tel" name="telefono" onfocus="restaurar()" />
+                        </div>
+                        <div class="campo">
+                            <label for="cont">Via de Contacto: </label>
+                            <input type="text" name="via" onfocus="restaurar()" />
+                        </div>
+                        <div class="campo">
+                            <label for="comen">Comentarios</label>
+                            <textarea id="message" ROWS="9" COLS="38" MAXLENGTH="300" >
+                            </textarea>
+                        </div>
+                        <input id="submit" type="submit" />
+
+                    </form>
+
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+        
+            <ul>
+
+                <li><a href="">    Testimonios	</a></li>
+                <li><a href="">    Soporte      </a></li>			
+                <li><a href="">    Soluciones   </a></li>		
+                <li><a href="">    Nosotros     </a></li>
+                <li><a href="">    Chat         </a></li>
+                <li><a href="">    Productos    </a></li>
+                <li><a href="">    Noticias     </a></li>
+                <li><a href="">    Contacto     </a></li>
+                
+            </ul>
+        </footer>
+    </body>
+</html> 
