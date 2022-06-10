@@ -8,7 +8,7 @@
 
   <body>
     <header id="cabecera">
-      <img src="header.jpg" width="100%" ; height="auto" />
+      <img src="./imagenes/header.jpg" width="100%" ; height="auto" />
     </header>
 
     <nav>
@@ -31,13 +31,19 @@
       <div class="principal">
         <aside id="izquierda">
           <div class="productos">
-            <img src="project_icon.gif" />
+            <img src="./imagenes/project_icon.gif" />
             <h3>Productos</h3>
           </div>
           <div>
             <div class="contimg">
               <p class="izq">Las mejores Variedades</p>
-              <img class="izq" src="images5.jpg" width="80%" ; height="13%" />
+              <img
+                class="izq"
+                src="./imagenes/images5.jpg"
+                width="80%"
+                ;
+                height="13%"
+              />
             </div>
           </div>
           <div>
@@ -45,7 +51,7 @@
               <p class="izq">Cata de Vinos</p>
               <img
                 class="izq"
-                src="imagesCAR2P5TK.jpg"
+                src="./imagenes/imagesCAR2P5TK.jpg"
                 width="80%"
                 ;
                 height="13%"
@@ -55,7 +61,13 @@
           <div>
             <div class="contimg">
               <p class="izq">Las Mejores Bodegas</p>
-              <img class="izq" src="images9.jpg" width="80%" ; height="13%" />
+              <img
+                class="izq"
+                src="./imagenes/images9.jpg"
+                width="80%"
+                ;
+                height="13%"
+              />
             </div>
           </div>
 
@@ -66,16 +78,20 @@
             <div>
               <form action="mailto:contacto@vinos.com.ar" method="post">
                 <div class="conteninput">
-                  <label for="nombre">Nombre:</label><br />
-                  <input type="text" name="nombre" id="nombre" required />
+                  <label for="nombre">Nombre:</label>
+                  <br />
+                  <input type="text" id="nombre" />
                 </div>
                 <div class="conteninput">
-                  <label for="correo">Email</label><br />
-                  <input type="email" name="correo" id="correo" />
+                  <label for="correo">Email</label>
+                  <br />
+                  <input type="email" id="correo" />
                 </div>
                 <div class="contenboton conteninput">
                   <a href="#" class="suscribir">Suscribite ahora</a>
-                  <button type="button" class="boton">Login</button>
+                  <button type="button" class="boton" onclick="comprobar()">
+                    Login
+                  </button>
                 </div>
               </form>
             </div>
@@ -85,7 +101,7 @@
         <section>
           <div class="medio">
             <article class="centro">
-              <img src="event_icon.gif" width="auto" ; height="9%" />
+              <img src="./imagenes/event_icon.gif" width="auto" ; height="9%" />
               <h3 size="5">Eventos</h3>
             </article>
 
@@ -105,7 +121,7 @@
 
           <div class="medio">
             <article class="centro">
-              <img src="service.gif" />
+              <img src="./imagenes/service.gif" />
               <h3 size="5">Glosario</h3>
             </article>
 
@@ -216,5 +232,7 @@
         <li><a href=""> Contacto </a></li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
